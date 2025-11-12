@@ -28,11 +28,10 @@ const Hero = () => {
               </div>
             </div>
             <div className="code-content">
-              <pre>{`// Building scalable systems with Rust
-async fn handle_webhook() -> Result<HttpResponse> {
-    let data = process_event().await?;
-    Ok(HttpResponse::Ok().json(data))
-}`}</pre>
+              <pre>{`Just like an async function, pause when needed, process 
+  what life sends your way, and respond with something that 
+  uplifts others. Growth isn’t blocking—it’s waiting with purpose.
+`}</pre>
             </div>
           </div>
         </div>

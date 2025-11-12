@@ -36,10 +36,10 @@ const About = () => {
               <h3>40%</h3>
               <p>Performance Improvement</p>
             </div>
-            <div className="stat">
-              <h3>2+</h3>
-              <p>Years Experience</p>
-            </div>
+            {/* <div className="stat">
+              <h3>6</h3>
+              <p>Month Experience</p>
+            </div> */}
           </div>
         </div>
       </div>

@@ -154,8 +154,9 @@ function App() {
       <About />
       <Skills />
       <Experience />
-      <Contact />
       <Projects />
+      <Contact />
+
       </div>
   );
 }

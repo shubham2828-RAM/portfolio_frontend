@@ -1,7 +1,7 @@
 {
   "name": "shubham-portfolio",
   "version": "1.0.0",
-  "homepage": "https://shubham2828-ram.github.io/portfolio_frontend",
+  "homepage": ".",
   "description": "Personal portfolio of Shubham Sharma - Backend Developer",
   "main": "index.js",
   "scripts": {

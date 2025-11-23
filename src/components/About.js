@@ -21,7 +21,7 @@ const About = () => {
             <div className="achievements">
               <h4>Key Achievements:</h4>
               <ul>
-                <li>Built end-to-end buyer communication features processing 10,000+ daily requests</li>
+                <li>Built end-to-end buyer communication features processing 500+ daily requests</li>
                 <li>Achieved 40% performance improvement through MongoDB query optimization</li>
                 <li>Revamped webhook systems for better async handling and reduced latency</li>
               </ul>

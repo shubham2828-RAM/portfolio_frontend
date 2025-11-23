@@ -28,6 +28,7 @@
 
 // components/Header.js (with placeholder)
 import React from 'react';
+import ThemeToggle from './ThemeToggle';
 
 const Header = () => {
   return (
@@ -53,6 +54,8 @@ const Header = () => {
           <a href="#experience">Experience</a>
           <a href="#projects">Projects</a>
           <a href="#contact">Contact</a>
+          <ThemeToggle />
+
         </nav>
       </div>
     </header>

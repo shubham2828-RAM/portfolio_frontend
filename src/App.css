@@ -634,3 +634,156 @@ section {
   }
 }
 
+
+/* CSS Variables for Light Theme (Default) */
+:root {
+  --primary: #2563eb;
+  --primary-dark: #1e40af;
+  --secondary: #10b981;
+  --bg-primary: #ffffff;
+  --bg-secondary: #f8fafc;
+  --bg-card: #ffffff;
+  --text-primary: #1e293b;
+  --text-secondary: #475569;
+  --text-muted: #64748b;
+  --border-color: #e2e8f0;
+  --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+/* CSS Variables for Dark Theme */
+[data-theme="dark"] {
+  --primary: #3b82f6;
+  --primary-dark: #2563eb;
+  --secondary: #10b981;
+  --bg-primary: #0f172a;
+  --bg-secondary: #1e293b;
+  --bg-card: #1e293b;
+  --text-primary: #f1f5f9;
+  --text-secondary: #cbd5e1;
+  --text-muted: #94a3b8;
+  --border-color: #334155;
+  --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3), 0 2px 4px -1px rgba(0, 0, 0, 0.2);
+}
+
+/* Apply theme variables */
+body {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Theme Toggle Styles */
+.theme-toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 50px;
+  background: var(--bg-secondary);
+  border: 2px solid var(--border-color);
+  transition: all 0.3s ease;
+}
+
+.theme-toggle:hover {
+  transform: scale(1.05);
+  border-color: var(--primary);
+}
+
+.toggle-track {
+  position: relative;
+  width: 50px;
+  height: 24px;
+  border-radius: 50px;
+  background: var(--border-color);
+  display: flex;
+  align-items: center;
+  padding: 2px;
+}
+
+.toggle-thumb {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: var(--primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  transition: transform 0.3s ease;
+  transform: translateX(0);
+}
+
+.toggle-thumb.dark {
+  transform: translateX(26px);
+}
+
+/* Update existing components to use CSS variables */
+.header {
+  background: var(--bg-card);
+  box-shadow: var(--shadow);
+}
+
+.hero {
+  background: linear-gradient(135deg, var(--bg-secondary) 0%, var(--bg-primary) 100%);
+}
+
+.about, .skills, .experience, .contact, .projects {
+  background: var(--bg-primary);
+}
+
+.skill-category, .timeline-content, .project-card {
+  background: var(--bg-card);
+  box-shadow: var(--shadow);
+  border: 1px solid var(--border-color);
+}
+
+.contact-note, .contact-note-centered, .contact-note-compact {
+  background: var(--bg-secondary);
+  border-left: 4px solid var(--primary);
+}
+
+/* Update text colors */
+h1, h2, h3, h4, h5, h6 {
+  color: var(--text-primary);
+}
+
+p, span, li {
+  color: var(--text-secondary);
+}
+
+.contact-label, .contact-label-compact {
+  color: var(--text-primary);
+}
+
+.contact-value, .contact-value-compact {
+  color: var(--text-secondary);
+}
+
+.contact-link, .contact-link-compact {
+  color: var(--primary);
+}
+
+.contact-link:hover, .contact-link-compact:hover {
+  color: var(--primary-dark);
+}
+
+/* Code window in hero */
+.code-window {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+}
+
+.window-header {
+  background: var(--bg-secondary);
+}
+
+.code-content {
+  color: var(--secondary);
+}
+
+/* If toggle is in header */
+.header .theme-toggle {
+  margin-left: 20px;
+  margin-right: 20px; /* Adjust as needed */
+}
+

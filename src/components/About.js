@@ -29,7 +29,7 @@ const About = () => {
           </div>
           <div className="about-stats">
             <div className="stat">
-              <h3>100+</h3>
+              <h3>500+</h3>
               <p>Daily Requests Processed</p>
             </div>
             <div className="stat">
